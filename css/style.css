@@ -34,12 +34,6 @@ a:not([href]):not([tabindex]):focus {
   outline: 0;
 }
 
-/*BACKGROUND*/
-/*CORES
-#face3c
-#5526c4
-#181818 */
-
 /*MENU*/
 #mainNav {
   padding-top: 1rem;
@@ -166,7 +160,7 @@ a:not([href]):not([tabindex]):focus {
 /*Cabeçalho*/
 .masthead {
   height:  100vh;
-  padding-top: calc(4rem + 74px);
+  padding-top: calc(3rem + 74px);
   padding-bottom: 7rem;
 }
 
@@ -187,7 +181,7 @@ a:not([href]):not([tabindex]):focus {
 
 @media (min-width: 992px) {
   .masthead {
-    padding-top: calc(6rem + 104px);
+    padding-top: calc(4rem + 104px);
     padding-bottom: 6rem;
   }
   .masthead .masthead-heading {
