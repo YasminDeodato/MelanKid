@@ -10,7 +10,7 @@ p {
 }
 /*LINK*/
 a {
-  color: #1abc9c;
+  color: #fff;
   text-decoration: none;
   background-color: transparent;
 }
@@ -312,7 +312,6 @@ section {
   display: block;
 }
 
-/*MODAL*/
 .modal-img {
   height: 50%;
   width: 100%;
@@ -323,7 +322,6 @@ section {
   padding-top: 0;
 }
 
-/*HOBBIES*/
 .box {
   padding-top: 1.25rem;
   margin: 0 1rem 1rem 0;
@@ -342,11 +340,4 @@ section {
 .hobbies {
   margin: 0 auto; 
 
-}
-
-/*BUTTONS*/
-.btn-warning:not(:disabled):not(.disabled).active, 
-.show>.btn-warning.dropdown-toggle,
-.btn-warning {
-  color: #fff; 
 }
