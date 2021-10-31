@@ -205,7 +205,8 @@ section {
 
 /*SEÇÃO*/
 .page-section {
-  padding: 3rem 0 8rem 0;
+  padding-top: 5rem;
+  padding-bottom: 6rem;
   line-height: 2.5rem;
 }
 
