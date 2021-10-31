@@ -1,0 +1,358 @@
+body {
+	margin: 0 auto;
+}
+p {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.small {
+  font-size: 1em;
+}
+/*LINK*/
+a {
+  color: #1abc9c;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #117964;
+  text-decoration: none;
+}
+
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):focus {
+  outline: 0;
+}
+
+/*BACKGROUND*/
+/*CORES
+#face3c
+#5526c4
+#181818 */
+
+/*MENU*/
+#mainNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 700;
+  background: #fff;
+}
+
+#mainNav .navbar-brand {
+  color: #181818;
+}
+
+#mainNav .navbar-nav {
+  margin-top: 1rem;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link {
+  color: #B0EACD;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+  color: #21bf73;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
+  color:  #21bf73;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+  color: #fff;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 90%;
+  padding: 0.8rem;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  border: 0.125rem solid transparent;
+  border-radius: 0.5rem;
+}
+
+.navbar-expand-sm .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.75em;
+    transition: font-size 0.3s;
+  }
+  #mainNav .navbar-nav {
+    margin-top: 0;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+    color: #5526c4;
+    background: #fff;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+    color: #5526c4;
+    background: #fff;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 2em;
+  }
+}
+
+/*Container*/
+.align-items-center {
+    align-items: center!important;
+}
+.flex-column {
+    flex-direction: column!important;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/*Cabeçalho*/
+.masthead {
+  height:  100vh;
+  padding-top: calc(4rem + 74px);
+  padding-bottom: 7rem;
+}
+
+.masthead .masthead-heading {
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.masthead .masthead-subheading {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.masthead .masthead-avatar {
+  width: 17rem;
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    padding-top: calc(6rem + 104px);
+    padding-bottom: 6rem;
+  }
+  .masthead .masthead-heading {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .masthead .masthead-subheading {
+    font-size: 1.75rem;
+  }
+}
+
+/*RODAPE*/
+#footer {
+  margin-bottom: 0;
+}
+
+/*SECTION*/
+section {
+   display: block;
+}
+
+/*SEÇÃO*/
+.page-section {
+  padding: 3rem 0 8rem 0;
+  line-height: 2.5rem;
+}
+
+.page-section-heading {
+  padding: 3rem 0 2rem 0;
+}
+
+.page-section .page-section-heading {
+  font-size: 2.25rem;
+}
+
+@media (min-width: 992px) {
+  .page-section .page-section-heading {
+    font-size: 3rem;
+  }
+}
+
+/*HABILIDADES*/
+#animacao {
+  /*width: 100px;
+  height: 100px;*/
+  position: relative;
+  animation-name: example;
+  animation-duration: 2s;
+}
+
+@keyframes example {
+  0%  {opacity: 0; right:200px; top:0px;}
+  100% {opacity: 100; right:0px; top:0px;}
+}
+
+.progress {
+    height: 25px;
+    background: rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: visible;
+    position: relative;
+}
+
+.progress .progress-bar{
+    position: relative;
+    border-radius: 5px;
+    animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 2s;
+    animation-play-state: paused;
+}
+
+.progress-bar {
+    animation-play-state: paused;
+}
+
+.progress-bar.is-visible{
+    animation-play-state: running;
+}
+
+@keyframes animate-positive{
+    0% {width:0;}
+}
+
+.checked {
+  color: orange;
+}
+
+/* PORTIFOLIO */
+.itens {
+  margin: 10px -16px;
+}
+
+.itens,
+.itens > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 100%;
+  display: none; 
+}
+
+@media (min-width: 576px) {
+  .column {
+    width: 50%; 
+  }
+}
+@media (min-width: 992px) {
+  .column {
+    width: 33.33%; 
+  }
+}
+
+.itens:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.show {
+  display: block;
+}
+
+/*MODAL*/
+.modal-img {
+  height: 50%;
+  width: 100%;
+}
+
+.modal-body {
+  padding: 1.5rem;
+  padding-top: 0;
+}
+
+/*HOBBIES*/
+.box {
+  padding-top: 1.25rem;
+  margin: 0 1rem 1rem 0;
+  border-radius: 10px;
+  border-width: 2px;
+  width: 6.25rem;
+  height: auto;
+  text-align: center;
+  float: left;
+}
+
+.box:hover {
+    opacity: 0.7;
+}
+
+.hobbies {
+  margin: 0 auto; 
+
+}
+
+/*BUTTONS*/
+.btn-warning:not(:disabled):not(.disabled).active, 
+.show>.btn-warning.dropdown-toggle,
+.btn-warning {
+  color: #fff; 
+}
